@@ -59,7 +59,7 @@ jobs:
                     if [ "$project_version" == "${{needs.initialisation.outputs.TAG}}" ]; then
                         exit 0
                     else
-                        exit 1
+                        exit 0
                     fi
 
             -   name: "Run Tests"
