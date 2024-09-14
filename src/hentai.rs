@@ -104,7 +104,7 @@ impl Hentai
                 }) // limit title to 243 B so filename does not exceed 255 B
                 .collect();
         }
-        cbz_filename = format!("{id} {cbz_filename}.cbz"); // prepend id, append extension
+        cbz_filename = format!("{{{id}}} {cbz_filename}.cbz"); // prepend id, append extension
 
         return Ok(Self
         {
